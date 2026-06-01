@@ -34,7 +34,7 @@
           <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="5" fill="#23F822"/></svg>
           Laboratório Maker · IFBA campus Eunápolis
         </div>
-        <h1>Onde <em>ideias</em> ganham forma e tecnologia transforma</h1>
+        <h1>Laboratório<em> Maker</em> tecnologia transforma</h1>
         <p>Um espaço de criação, aprendizado colaborativo e inovação tecnológica — onde estudantes, professores e comunidade desenvolvem o futuro juntos.</p>
         <div class="hero-btns">
           <button class="btn-primary" onclick="nav('historia')">
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <!-- RIGHT: yellow lamp -->
+      <!-- UMA LAMPADADADA AMARELAAAAAAAAAAAAA-->
       <div class="lamp-wrap">
         <svg class="lamp-svg" viewBox="0 0 120 160" fill="none" xmlns="http://www.w3.org/2000/svg">
           <!-- Glow aura -->
@@ -100,14 +100,14 @@
       </div>
 
     </div>
-  </div><!-- /hero -->
+  </div>
 
   <!-- STATS -->
   <div class="stats-bar">
-    <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Áreas de Atuação</div></div>
+    <!-- <div class="stat"><div class="stat-num">4+</div><div class="stat-label">Áreas de Atuação</div></div>
     <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Projetos Realizados</div></div>
     <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Alunos Impactados</div></div>
-    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Anos de Inovação</div></div>
+    <div class="stat"><div class="stat-num">3</div><div class="stat-label">Anos de Inovação</div></div> -->
   </div>
 
   <!-- O QUE FAZEMOS -->
@@ -238,7 +238,6 @@
   </div>
 </div>
 
-<!-- ══ SOBRE ══ -->
 <section id="s-sobre">
   <div class="section-pad">
     <p class="section-label">Quem somos</p>
@@ -290,6 +289,11 @@ const AREAS = [
     icon: '📣', titulo: 'Marketing Digital', tag: 'COMUNICAÇÃO',
     desc: 'A área de marketing e comunicação cuida da identidade visual, redes sociais e divulgação de projetos do EDUMAKER. Criamos conteúdo que conecta o laboratório com a comunidade e amplifica o impacto das iniciativas.',
     skills: ['Social Media', 'Design Gráfico', 'Identidade Visual', 'Copywriting', 'Analytics']
+  },
+  {
+    icon: '🥀', titulo: 'Identidade visual', tag: 'DESIGN',
+    desc: 'A área de marketing e comunicação cuida da identidade visual, redes sociais e divulgação de projetos do EDUMAKER. Criamos conteúdo que conecta o laboratório com a comunidade e amplifica o impacto das iniciativas.',
+    skills: ['Social Media', 'Design Gráfico', 'Identidade Visual', 'Copywriting', 'Analytics']
   }
 ];
 
@@ -313,6 +317,7 @@ function nav(page) {
 
 /* ── RENDER AREAS ── */
 function renderAreas() {
+
   const el = document.getElementById('areas-detail');
   el.innerHTML = AREAS.map(a => `
     <div class="area-detail-card">
